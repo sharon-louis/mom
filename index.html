@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4f7f1" />
+  <meta name="description" content="For our Mama, with love from Sean, Stacy, Jessica, Tonya, Stéphane, Chloé and Aaliyah." />
+  <title>Mama, Our Star · Happy Mother's Day</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Manrope:wght@300;400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+
+  <!-- ============== PRELOADER ============== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <svg class="preloader__star" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 5 L61 39 L97 39 L68 60 L79 95 L50 74 L21 95 L32 60 L3 39 L39 39 Z" />
+      </svg>
+      <p class="preloader__text">For mom… one moment</p>
+    </div>
+  </div>
+
+  <!-- ============== AUDIO CONTROL ============== -->
+  <button class="audio-toggle" id="audioToggle" aria-label="Toggle music">
+    <span class="audio-toggle__waves">
+      <span></span><span></span><span></span><span></span>
+    </span>
+    <span class="audio-toggle__label">Music</span>
+  </button>
+  <audio id="bgAudio" loop preload="none">
+    <source src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heartwarming.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ============== PROGRESS BAR ============== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============== NAV ============== -->
+  <nav class="topnav">
+    <a href="#hero" class="topnav__brand">
+      <span class="topnav__star">✦</span> <span>For Mama</span>
+    </a>
+    <ul class="topnav__links">
+      <li><a href="#timeline">Memories</a></li>
+      <li><a href="#messages">Words</a></li>
+      <li><a href="#galerie">Pictures</a></li>
+      <li><a href="#constellation">Family</a></li>
+      <li><a href="#livre">Book</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="hero">
+    <div class="hero__grain"></div>
+    <div class="hero__halo"></div>
+    <div class="hero__bg-stars" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="hero__grid">
+      <div class="hero__title-wrap">
+        <p class="hero__kicker">Mother's Day · 2026</p>
+        <h1 class="hero__title">
+          <span class="word w1">Mama,</span>
+          <span class="word w2">our</span>
+          <span class="word w3"><em>star</em>.</span>
+        </h1>
+        <p class="hero__sub">A small island of love, scrollable.</p>
+        <p class="hero__signed">Sean, Stacy, Jessica, Tonya, Stéphane <span class="hero__plus">+ Chloé & Aaliyah</span></p>
+        <a class="hero__cta" href="#citation">
+          <span>Begin the journey</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__portrait-wrap tilt-3d" data-tilt>
+        <div class="hero__portrait-frame">
+          <img src="public/media/photos/13.jpg" alt="Our beloved Mama" class="hero__portrait" loading="eager" />
+          <span class="hero__portrait-label">Maman</span>
+        </div>
+        <span class="hero__portrait-deco">✦</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ============== CITATION ============== -->
+  <section class="quote" id="citation">
+    <div class="quote__deco" aria-hidden="true">"</div>
+    <blockquote class="quote__text">
+      A mother's love is the <em>first horizon</em><br/>
+      and the <em>last shelter</em>.
+    </blockquote>
+    <p class="quote__creole">— <strong>Sharon</strong> · A mama's love never ends.</p>
+  </section>
+
+  <!-- ============== TIMELINE ============== -->
+  <section class="timeline" id="timeline">
+    <header class="section-head">
+      <p class="section-head__kicker">Chapter One</p>
+      <h2 class="section-head__title">The memories <em>we keep close</em></h2>
+      <p class="section-head__intro">Small moments that became big ones. <span class="creole">Moments that will stay in our hearts</span></p>
+    </header>
+
+    <ol class="timeline__list">
+      <li class="timeline__item" data-side="left">
+        <div class="timeline__media tilt-3d" data-tilt>
+          <img src="public/media/photos/11.jpg" alt="Family bathing in the river" loading="lazy" />
+        </div>
+        <div class="timeline__caption">
+          <span class="timeline__year">The river</span>
+          <h3>Feet in the water, hearts wide open</h3>
+          <p>That afternoon by the river, laughter louder than the current, the whole family together.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item" data-side="right">
+        <div class="timeline__media tilt-3d" data-tilt>
+          <img src="public/media/photos/14.jpg" alt="Three of us in front of the white car" loading="lazy" />
+        </div>
+        <div class="timeline__caption">
+          <span class="timeline__year">The departure</span>
+          <h3>Before the road</h3>
+          <p>Three of us posed in front of the white car. The kind of picture that says <em>we were here, together</em>, before we drove off into another good day.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item" data-side="left">
+        <div class="timeline__media tilt-3d" data-tilt>
+          <img src="public/media/photos/15.jpg" alt="The family in Arras" loading="lazy" />
+        </div>
+        <div class="timeline__caption">
+          <span class="timeline__year">Arras, France</span>
+          <h3>An ordinary table, an unforgettable evening</h3>
+          <p>A simple meal, the kids around. Mama at the center, like always.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item" data-side="right">
+        <div class="timeline__media tilt-3d" data-tilt>
+          <img src="public/media/photos/09.jpg" alt="Mama and Chloé in Paris" loading="lazy" />
+        </div>
+        <div class="timeline__caption">
+          <span class="timeline__year">Paris</span>
+          <h3>Cobblestones, lace and the little one</h3>
+          <p>Mama and Chloé in the streets of Paris — two generations holding the same smile.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item" data-side="left">
+        <div class="timeline__media tilt-3d" data-tilt>
+          <img src="public/media/photos/lolli-3.jpg" alt="The apple tree, three generations" loading="lazy" />
+        </div>
+        <div class="timeline__caption">
+          <span class="timeline__year">The apple tree</span>
+          <h3>Three of us, and a fourth on the way</h3>
+          <p>Under the apple tree — the day we knew another little soul was coming to join the family. <em>Lollipop on the way.</em></p>
+        </div>
+      </li>
+
+      <li class="timeline__item" data-side="right">
+        <div class="timeline__media tilt-3d" data-tilt>
+          <img src="public/media/photos/01.jpg" alt="Golden hour" loading="lazy" />
+        </div>
+        <div class="timeline__caption">
+          <span class="timeline__year">Golden hour</span>
+          <h3>Mother and son</h3>
+          <p>A walk, the sun going to sleep behind us — a moment you can almost hear when you look at it.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============== MESSAGES (CARTES FLIPPABLES) ============== -->
+  <section class="messages" id="messages">
+    <header class="section-head">
+      <p class="section-head__kicker">Chapter Two</p>
+      <h2 class="section-head__title">Words from <em>each of us</em></h2>
+      <p class="section-head__intro">Tap a card.</p>
+    </header>
+
+    <div class="messages__grid">
+
+      <article class="card" tabindex="0" role="button" aria-label="Sean's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Dumpty</span>
+            <h3 class="card__name">Sean</h3>
+            <p class="card__hint">The eldest · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>Word from Sean. <em>Love</em></p>
+            <span class="card__sig">— Sean</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" role="button" aria-label="Stacy's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Big Foot</span>
+            <h3 class="card__name">Stacy</h3>
+            <p class="card__hint">Your soft one · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>Word from Stacy. <em>Love you mom.</em></p>
+            <span class="card__sig">— Stacy</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" role="button" aria-label="Jessica's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Big Mama</span>
+            <h3 class="card__name">Jessica</h3>
+            <p class="card__hint">The heartbeat · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>Word from Jessica. <em>Thanks mom.</em></p>
+            <span class="card__sig">— Jessica</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" role="button" aria-label="Tonya's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Djòl Nwè</span>
+            <h3 class="card__name">Tonya</h3>
+            <p class="card__hint">Truth-teller · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>Word from Tonya. <em>Love you.</em></p>
+            <span class="card__sig">— Tonya</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" tabindex="0" role="button" aria-label="Stéphane's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Ti Kok</span>
+            <h3 class="card__name">Stéphane</h3>
+            <p class="card__hint">Your youngest · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>I'm the small one of the five, but I have to thank you for everything. This whole site is a "thank you" I couldn't fit in a phone call. <em>I love you, maman.</em></p>
+            <span class="card__sig">— Stéphane</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--special" tabindex="0" role="button" aria-label="Chloé's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Ti Bourrik</span>
+            <h3 class="card__name">Chloé</h3>
+            <p class="card__hint">The grandbaby · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>Word from Chloé. <em>Love you Granny.</em></p>
+            <span class="card__sig">— Chloé · ti bourrik la</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--lollipop" tabindex="0" role="button" aria-label="Aaliyah's message">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <span class="card__nick">Lollipop</span>
+            <h3 class="card__name">Aaliyah</h3>
+            <p class="card__hint">The little one · tap to read</p>
+            <span class="card__corner">✦</span>
+          </div>
+          <div class="card__face card__face--back">
+            <p>Mamie, I'm still little but I already know your hugs are the warmest. One day I'll say it with words — for now, my whole smile is for you. <em>Love you Granny.</em></p>
+            <span class="card__sig">— Aaliyah · lollipop</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============== GALERIE POLAROIDS ============== -->
+  <section class="gallery" id="galerie">
+    <header class="section-head">
+      <p class="section-head__kicker">Chapter Three</p>
+      <h2 class="section-head__title">The pictures <em>we love</em></h2>
+      <p class="section-head__intro">Tap a photo to see it bigger.</p>
+    </header>
+
+    <div class="gallery__board">
+      <figure class="polaroid" style="--r:-4deg"><img src="public/media/photos/02.jpg" alt="Mama" loading="lazy" /><figcaption>Always elegant</figcaption></figure>
+      <figure class="polaroid" style="--r:3deg"><img src="public/media/photos/03.jpg" alt="Mama" loading="lazy" /><figcaption>Her smile</figcaption></figure>
+      <figure class="polaroid" style="--r:-2deg"><img src="public/media/photos/04.jpg" alt="Mama, Christmas lights" loading="lazy" /><figcaption>Christmas glow</figcaption></figure>
+      <figure class="polaroid" style="--r:5deg"><img src="public/media/photos/06.jpg" alt="Mama at breakfast" loading="lazy" /><figcaption>Sunday breakfast</figcaption></figure>
+      <figure class="polaroid" style="--r:-3deg"><img src="public/media/photos/07.jpg" alt="Mama, cosy coat" loading="lazy" /><figcaption>Winter, warm coat</figcaption></figure>
+      <figure class="polaroid polaroid--big" style="--r:2deg"><img src="public/media/photos/08.jpg" alt="Three generations" loading="lazy" /><figcaption>Three generations, one love</figcaption></figure>
+      <figure class="polaroid" style="--r:-5deg"><img src="public/media/photos/05.jpg" alt="Mama, blue floral dress" loading="lazy" /><figcaption>Blue flowers</figcaption></figure>
+      <figure class="polaroid" style="--r:4deg"><img src="public/media/photos/12.jpg" alt="Mama, the island" loading="lazy" /><figcaption>Back on the island</figcaption></figure>
+      <figure class="polaroid" style="--r:-2deg"><img src="public/media/photos/10.jpg" alt="Mamie and Chloé" loading="lazy" /><figcaption>Mamie & Ti Bourrik</figcaption></figure>
+      <figure class="polaroid" style="--r:3deg"><img src="public/media/photos/lolli-1.jpg" alt="Aaliyah, Lollipop" loading="lazy" /><figcaption>Lollipop · Aaliyah</figcaption></figure>
+      <figure class="polaroid" style="--r:-4deg"><img src="public/media/photos/lolli-2.jpg" alt="Aaliyah and her mama" loading="lazy" /><figcaption>Lollipop & her mama</figcaption></figure>
+      <figure class="polaroid" style="--r:2deg"><img src="public/media/photos/lolli-4.jpg" alt="Aaliyah, smash cake" loading="lazy" /><figcaption>The cake mood</figcaption></figure>
+    </div>
+
+    <div class="gallery__videos">
+      <p class="gallery__videos-label">And when the pictures start to move…</p>
+      <div class="gallery__videos-grid">
+        <div class="video-card tilt-3d" data-tilt>
+          <video src="public/media/videos/video-1.mp4" controls playsinline preload="metadata"></video>
+        </div>
+        <div class="video-card tilt-3d" data-tilt>
+          <video src="public/media/videos/video-2.mp4" controls playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONSTELLATION INTERACTIVE ============== -->
+  <section class="constellation" id="constellation">
+    <header class="section-head section-head--light">
+      <p class="section-head__kicker">Chapter Four</p>
+      <h2 class="section-head__title">Our family <em>constellation</em></h2>
+      <p class="section-head__intro">Tap each star to see what Mama gave us.</p>
+    </header>
+
+    <div class="constellation__wrap">
+      <svg class="constellation__svg" viewBox="0 0 800 600" aria-hidden="true">
+        <g class="lines" stroke="rgba(255,255,255,.3)" stroke-width="1" fill="none">
+          <line x1="400" y1="300" x2="400" y2="100"/>
+          <line x1="400" y1="300" x2="180" y2="170"/>
+          <line x1="400" y1="300" x2="620" y2="170"/>
+          <line x1="400" y1="300" x2="130" y2="380"/>
+          <line x1="400" y1="300" x2="670" y2="380"/>
+          <line x1="400" y1="300" x2="290" y2="510"/>
+          <line x1="400" y1="300" x2="510" y2="510"/>
+        </g>
+        <g class="stars">
+          <circle class="constellation__center" cx="400" cy="300" r="14" />
+          <circle class="constellation__star" data-name="Sean" data-trait="Humpty Dumpty — the steady shoulder" cx="400" cy="100" r="9"/>
+          <circle class="constellation__star" data-name="Stacy" data-trait="Big Foot — don't let her step on your feet" cx="180" cy="170" r="9"/>
+          <circle class="constellation__star" data-name="Jessica" data-trait="Big Mama — the family's big belly" cx="620" cy="170" r="9"/>
+          <circle class="constellation__star" data-name="Tonya" data-trait="Djòl Nwè — straight talk, deep love" cx="130" cy="380" r="9"/>
+          <circle class="constellation__star" data-name="Stéphane" data-trait="Ti Kok — small but standing tall" cx="670" cy="380" r="9"/>
+          <circle class="constellation__star" data-name="Chloé" data-trait="Ti Bourrik — be careful of her" cx="290" cy="510" r="9"/>
+          <circle class="constellation__star" data-name="Aaliyah" data-trait="Lollipop — the newest light in the family" cx="510" cy="510" r="9"/>
+        </g>
+      </svg>
+
+      <div class="constellation__readout" id="constellationReadout">
+        <p class="constellation__readout-name">Mama</p>
+        <p class="constellation__readout-trait">The center we all turn around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== LIVRE FLIPBOOK ============== -->
+  <section class="book" id="livre">
+    <header class="section-head">
+      <p class="section-head__kicker">Chapter Five</p>
+      <h2 class="section-head__title">The little <em>memory book</em></h2>
+      <p class="section-head__intro">Turn the pages.</p>
+    </header>
+
+    <div class="book__frame" data-current="1">
+      <!-- Chapter 1: Portraits of Mama -->
+      <div class="book__page" data-page="1"><img src="public/media/photos/book-33.jpg" alt="" /><p class="book__caption">1</p></div>
+      <div class="book__page" data-page="2"><img src="public/media/photos/book-04.jpg" alt="" /><p class="book__caption">2</p></div>
+      <div class="book__page" data-page="3"><img src="public/media/photos/book-07.jpg" alt="" /><p class="book__caption">3</p></div>
+      <div class="book__page" data-page="4"><img src="public/media/photos/book-08.jpg" alt="" /><p class="book__caption">4</p></div>
+      <div class="book__page" data-page="5"><img src="public/media/photos/book-12.jpg" alt="" /><p class="book__caption">5</p></div>
+      <div class="book__page" data-page="6"><img src="public/media/photos/book-02.jpg" alt="" /><p class="book__caption">6</p></div>
+      <div class="book__page" data-page="7"><img src="public/media/photos/book-03.jpg" alt="" /><p class="book__caption">7</p></div>
+      <div class="book__page" data-page="8"><img src="public/media/photos/book-09.jpg" alt="" /><p class="book__caption">8</p></div>
+      <div class="book__page" data-page="9"><img src="public/media/photos/book-05.jpg" alt="" /><p class="book__caption">9</p></div>
+      <div class="book__page" data-page="10"><img src="public/media/photos/book-01.jpg" alt="" /><p class="book__caption">10</p></div>
+
+      <!-- Chapter 2: Tender moments Mamie & Chloé -->
+      <div class="book__page" data-page="11"><img src="public/media/photos/book-28.jpg" alt="" /><p class="book__caption">11</p></div>
+      <div class="book__page" data-page="12"><img src="public/media/photos/book-31.jpg" alt="" /><p class="book__caption">12</p></div>
+      <div class="book__page" data-page="13"><img src="public/media/photos/book-32.jpg" alt="" /><p class="book__caption">13</p></div>
+      <div class="book__page" data-page="14"><img src="public/media/photos/book-29.jpg" alt="" /><p class="book__caption">14</p></div>
+      <div class="book__page" data-page="15"><img src="public/media/photos/book-30.jpg" alt="" /><p class="book__caption">15</p></div>
+      <div class="book__page" data-page="16"><img src="public/media/photos/book-18.jpg" alt="" /><p class="book__caption">16</p></div>
+
+      <!-- Chapter 3: Family moments -->
+      <div class="book__page" data-page="17"><img src="public/media/photos/book-13.jpg" alt="" /><p class="book__caption">17</p></div>
+      <div class="book__page" data-page="18"><img src="public/media/photos/book-14.jpg" alt="" /><p class="book__caption">18</p></div>
+      <div class="book__page" data-page="19"><img src="public/media/photos/book-10.jpg" alt="" /><p class="book__caption">19</p></div>
+      <div class="book__page" data-page="20"><img src="public/media/photos/book-11.jpg" alt="" /><p class="book__caption">20</p></div>
+      <div class="book__page" data-page="21"><img src="public/media/photos/book-06.jpg" alt="" /><p class="book__caption">21</p></div>
+      <div class="book__page" data-page="22"><img src="public/media/photos/book-19.jpg" alt="" /><p class="book__caption">22</p></div>
+      <div class="book__page" data-page="23"><img src="public/media/photos/book-20.jpg" alt="" /><p class="book__caption">23</p></div>
+      <div class="book__page" data-page="24"><img src="public/media/photos/book-15.jpg" alt="" /><p class="book__caption">24</p></div>
+      <div class="book__page" data-page="25"><img src="public/media/photos/book-16.jpg" alt="" /><p class="book__caption">25</p></div>
+      <div class="book__page" data-page="26"><img src="public/media/photos/book-17.jpg" alt="" /><p class="book__caption">26</p></div>
+
+      <!-- Chapter 4: Mamie & Chloé adventures in France -->
+      <div class="book__page" data-page="27"><img src="public/media/photos/book-21.jpg" alt="" /><p class="book__caption">27</p></div>
+      <div class="book__page" data-page="28"><img src="public/media/photos/book-22.jpg" alt="" /><p class="book__caption">28</p></div>
+      <div class="book__page" data-page="29"><img src="public/media/photos/book-23.jpg" alt="" /><p class="book__caption">29</p></div>
+      <div class="book__page" data-page="30"><img src="public/media/photos/book-24.jpg" alt="" /><p class="book__caption">30</p></div>
+      <div class="book__page" data-page="31"><img src="public/media/photos/book-25.jpg" alt="" /><p class="book__caption">31</p></div>
+      <div class="book__page" data-page="32"><img src="public/media/photos/book-26.jpg" alt="" /><p class="book__caption">32</p></div>
+      <div class="book__page" data-page="33"><img src="public/media/photos/book-27.jpg" alt="" /><p class="book__caption">33</p></div>
+
+      <!-- Final page: text -->
+      <div class="book__page book__page--text" data-page="34">
+        <div class="book__text">
+          <p class="book__title-handwritten">For you, Mom.</p>
+          <p>Each photo is a thank you.<br/>Each memory, a small kiss.<br/>You are <em>our compass</em>, our island, our reason.</p>
+          <p class="creole">Thanks a lot, love you.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="book__controls">
+      <button class="book__btn" data-action="prev" aria-label="Previous page">←</button>
+      <div class="book__counter">
+        <span id="bookCurrent">1</span><span class="book__counter-sep">/</span><span id="bookTotal">34</span>
+      </div>
+      <button class="book__btn" data-action="next" aria-label="Next page">→</button>
+    </div>
+
+    <p class="book__hint">Swipe or use arrows · 34 pages</p>
+  </section>
+
+  <!-- ============== FINALE ============== -->
+  <section class="finale" id="finale">
+    <div class="finale__petals" id="petalsContainer" aria-hidden="true"></div>
+
+    <div class="finale__inner">
+      <p class="finale__kicker">Final word</p>
+      <h2 class="finale__title">
+        <span>Happy</span>
+        <span class="finale__title-big">Mother's Day</span>
+        <span>Manman.</span>
+      </h2>
+      <p class="finale__creole">We will always be there for you. <span>·</span> Always yours.</p>
+
+      <div class="finale__signatures">
+        <span>Sean</span>
+        <span>Stacy</span>
+        <span>Jessica</span>
+        <span>Tonya</span>
+        <span>Stéphane</span>
+        <span class="is-petite">Chloé</span>
+        <span class="is-petite">Aaliyah</span>
+      </div>
+
+      <!-- Attestation officielle de la famille -->
+      <div class="finale__attestation">
+        <p class="finale__attestation-intro">With all our love, signed —</p>
+        <ul class="finale__attestation-list">
+          <li><span class="nick">Humpty Dumpty</span><span class="full-name">Sean</span></li>
+          <li><span class="nick">Big Foot</span><span class="full-name">Stacy</span></li>
+          <li><span class="nick">Big Mama</span><span class="full-name">Jessica</span></li>
+          <li><span class="nick">Djòl Nwè</span><span class="full-name">Tonya</span></li>
+          <li><span class="nick">Ti Kok</span><span class="full-name">Stéphane</span></li>
+          <li class="is-grand"><span class="nick">Ti Bourrik</span><span class="full-name">Chloé</span></li>
+          <li class="is-grand"><span class="nick">Lollipop</span><span class="full-name">Aaliyah</span></li>
+        </ul>
+        <p class="finale__attestation-seal">Mother's Day · 2026</p>
+      </div>
+
+      <button class="finale__heart" id="heartBtn" aria-label="Send love">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s-7.5-4.6-9.5-9.4C1.1 8.2 3.4 5 6.6 5c1.9 0 3.5 1 4.4 2.5C11.9 6 13.5 5 15.4 5c3.2 0 5.5 3.2 4.1 6.6C19.5 16.4 12 21 12 21z" fill="currentColor"/>
+        </svg>
+      </button>
+      <p class="finale__heart-hint">Tap the heart · petals will fall</p>
+    </div>
+
+    <footer class="footer">
+      <p>Made with love · 2026 · For the woman who made us all.</p>
+    </footer>
+  </section>
+
+  <!-- ============== LIGHTBOX ============== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <img id="lightboxImg" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- ============== SCRIPTS ============== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="src/script.js"></script>
+</body>
+</html>
